@@ -1,0 +1,211 @@
+[
+  {
+    "content": "launch me a campaign ",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "06706fd1-c323-48e8-a752-a42b2bcb45d3"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CAMPAIGN_INFO | missing=objective | tool=launching_agent_tool\", \"response\": \"What is your campaign objective? Please choose one: Traffic, Leads, or Sales.\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "aa11a369-ad51-40e4-a3e6-de704c79d695",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "Sales ",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "9234daef-adca-46bd-9de9-c175a25bc73d"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CAMPAIGN_INFO | missing=target_country | tool=launching_agent_tool\", \"response\": \"Which country or region should this campaign target?\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "60d67668-414d-40d2-8bc6-3266842a5f1a",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "india Mumbai ",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "0fbe390f-04b6-417a-8cb2-7758c7400e27"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CAMPAIGN_INFO | missing=daily_budget | tool=launching_agent_tool\", \"response\": \"What is the daily budget (amount in your currency) for this campaign?\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "1520c3dc-ed2e-4457-a592-5b33285e2550",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "200 dollar",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "700e45b3-65f5-4321-b680-487707345117"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CAMPAIGN_INFO | missing=start_date | tool=launching_agent_tool\", \"response\": \"When should the campaign start? Please provide the date (ISO format preferred, e.g., 2024-06-17).\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "87989d4e-cfd1-4139-9a5c-74d34cd91aa2",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "2025-12-11",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "50059b87-06f9-428a-97e5-77d80edd4825"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CREATIVE | waiting=creative_source_select | tool=launching_agent_tool | missing=creative_source\", \"response\": \"Would you like us to generate creatives for your campaign, or will you provide your own creatives? Please reply with 'GENERATE' or 'USER_PROVIDED'.\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "f63d3c55-24ff-4bac-a3ed-f2bf609f2ab7",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "please generate ",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "25e5a2a9-a534-45c4-835d-c6494dfec92f"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CREATIVE | waiting=product_url | missing=product_url | tool=launching_agent_tool\", \"response\": \"Please provide the product or landing page URL so that we can generate creatives for your campaign.\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "9bdb5703-038d-41a9-9c32-f2e5b5241f67",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "https://github.com/DigiStrique-Solutions/strique-ai-server/pulls",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "55fbda70-6c58-4e78-b50f-cd2c7b11b9df"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=CREATIVE | waiting=creative_selection | tool=launching_agent_tool | creative_urls_present=true\", \"response\": \"Here are the generated creative options for your campaign:\\n1. https://img.meta-creative-1\\n2. https://img.meta-creative-2\\n3. https://img.meta-creative-3\\n\\nPlease select which creative(s) you would like to use by specifying the number(s).\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "af204469-a64c-4094-86de-b39f03ec3e5e",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "https://img.meta-creative-2\n\nhttps://img.meta-creative-1",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "6e494201-8897-4432-a41c-7b4ab3a04f62"
+  },
+  {
+    "content": "{\"context\": \"mode=launch | stage=LAUNCHING | waiting=confirmation | tool=launching_agent_tool\", \"response\": \"You have selected creatives https://img.meta-creative-2 and https://img.meta-creative-1 for your campaign targeting Sales in Mumbai, India, with a daily budget of 200 dollars, starting on 2025-12-11.\\n\\nDo you want to proceed and launch this campaign? Please respond YES or NO.\"}",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "ai",
+    "name": null,
+    "id": "7921e7f8-513a-4237-9eff-1d07007b7a3c",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": null
+  },
+  {
+    "content": "Yes ",
+    "additional_kwargs": {},
+    "response_metadata": {},
+    "type": "human",
+    "name": null,
+    "id": "907b3088-badd-48fc-ab6b-12f5f9dc42ca"
+  },
+  {
+    "content": "{\"context\":\"mode=launch | stage=LAUNCHING | completed=true | tool=launching_agent_tool\",\"response\":\"Your campaign has been successfully launched with your selected creatives and settings.\\n\\nWould you like to view performance reports or get analytics on your campaign next?\"}",
+    "additional_kwargs": {
+      "parsed": null,
+      "refusal": null
+    },
+    "response_metadata": {
+      "token_usage": {
+        "completion_tokens": 63,
+        "prompt_tokens": 2084,
+        "total_tokens": 2147,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 1792
+        }
+      },
+      "model_provider": "openai",
+      "model_name": "gpt-4.1-2025-04-14",
+      "system_fingerprint": "fp_503841a4dc",
+      "id": "chatcmpl-CnOaDWLTmRx6iFSBrSm89iSeVrYvH",
+      "service_tier": "default",
+      "finish_reason": "stop",
+      "logprobs": null
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--019b2729-bacf-7a03-8286-4e9f7fa5acfd-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 2084,
+      "output_tokens": 63,
+      "total_tokens": 2147,
+      "input_token_details": {
+        "audio": 0,
+        "cache_read": 1792
+      },
+      "output_token_details": {
+        "audio": 0,
+        "reasoning": 0
+      }
+    }
+  }
+]
